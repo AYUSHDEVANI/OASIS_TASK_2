@@ -45,4 +45,7 @@ def main():
     bmi_category = interpret_bmi(bmi)
 
     display_results(weight=weight, height=height, bmi=bmi, category=bmi_category)
-    
+
+
+if __name__ == "__main__":
+    main()
