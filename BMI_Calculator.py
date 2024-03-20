@@ -11,3 +11,6 @@ def get_user_input(prompt):
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
+def claculate_bmi(weight, height):
+    bmi = weight / (height ** 2)
+    return bmi
