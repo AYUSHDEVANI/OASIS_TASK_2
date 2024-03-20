@@ -35,3 +35,14 @@ def display_results(weight, height, bmi, category):
     print(f"BMI: {bmi:.2f}")
     print(f"Category: {category}")
 
+def main():
+    print("Welcome to the BMI Calculator!!")
+
+    weight = get_user_input("Enter your weight in kilograms: ")
+    height = get_user_input("Enter your height in meters: ")
+
+    bmi = claculate_bmi(weight=weight, height=height)
+    bmi_category = interpret_bmi(bmi)
+
+    display_results(weight=weight, height=height, bmi=bmi, category=bmi_category)
+    
