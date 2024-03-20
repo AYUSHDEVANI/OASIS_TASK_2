@@ -28,3 +28,10 @@ def interpret_bmi(bmi):
     else:
         return "Obese"
 
+def display_results(weight, height, bmi, category):
+    print("\nBMI CALCULATOR RESULTS")
+    print(f"Weight: {weight} kg")
+    print(f"Height: {height} m")
+    print(f"BMI: {bmi:.2f}")
+    print(f"Category: {category}")
+
